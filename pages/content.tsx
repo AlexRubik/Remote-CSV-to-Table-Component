@@ -112,9 +112,9 @@ export default function Home() {
   const [entries, setEntries] = useState<Entry<any>[]>([]);
 
   const client = createClient({
-    space: "5jkg9bgtmne0",
+    space: "",
     environment: "staging", // defaults to 'master' if not set
-    accessToken: "Nc8yZBQ9Ox1hkus1lUpWsCzxrvRRndkBjDpSDI5WAYE",
+    accessToken: "",
   });
 
   const getEntries = async (contentType = "all") => {
