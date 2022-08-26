@@ -4,6 +4,7 @@
 import { useState, FC, useEffect } from "react";
 import styles from "../styles/Hello.module.css";
 import { createClient, Entry, EntryCollection, Metadata, Sys  } from "contentful";
+import {string} from "prop-types";
 
 // press
 type PressObject = {
@@ -39,6 +40,32 @@ type ResearchArticleFeaturedObject = {
 
 }
 
+type FileObject = {
+  contentType: string,
+  details: {size: number, image: {height: number, width: number}},
+  fileName: string,
+  url: string
+}
+
+type HeroImageObject = {
+  fields: {
+    description: string,
+    file: FileObject,
+    title: string
+  }
+}
+
+type ImageObject = {
+  fields: {
+    description: string,
+    file: FileObject,
+    title: string
+  },
+  metadata: Metadata,
+  sys: Sys
+
+}
+
 type AuthorObject = {
 
   fields: {
@@ -58,6 +85,10 @@ type AuthorObject = {
   body: string,
   description: string
 }
+
+type PersonObject = AuthorObject
+
+
 
 //blogPost
 type BlogPostObject = {
@@ -87,7 +118,7 @@ export default function Home() {
   });
 
   const getEntries = async (contentType = "all") => {
-    const res = await client.getEntries<PressObject>({content_type: 'blogPost'})
+    const res = await client.getEntries<PressObject>({content_type: 'person'})
 
         if (contentType === "all") {
           // setEntries(res.items);
