@@ -1,6 +1,6 @@
 import request from 'request';
 import {StringStream} from 'scramjet';
-import {TableProps} from "../components/Table";
+import {TableProps} from "../types/types";
 
 
 

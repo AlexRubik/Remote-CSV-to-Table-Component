@@ -4,13 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8771da0f-56cc-423d-b2f9-ec6277285b35" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Table.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Table.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/styles/Hello.module.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/types/types.ts" beforeDir="false" afterPath="$PROJECT_DIR$/types/types.ts" afterDir="false" />
+    <list default="true" id="8771da0f-56cc-423d-b2f9-ec6277285b35" name="Changes" comment="commit test">
+      <change beforePath="$PROJECT_DIR$/utils/readCsv.ts" beforeDir="false" afterPath="$PROJECT_DIR$/utils/readCsv.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,8 +46,16 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1666202260506</updated>
-      <workItem from="1666202261709" duration="5304000" />
+      <workItem from="1666202261709" duration="5505000" />
     </task>
+    <task id="LOCAL-00001" summary="commit test">
+      <created>1666209753226</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1666209753226</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -68,5 +71,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="commit test" />
+    <option name="LAST_COMMIT_MESSAGE" value="commit test" />
   </component>
 </project>
