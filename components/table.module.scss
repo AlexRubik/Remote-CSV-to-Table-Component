@@ -1,0 +1,45 @@
+.table {
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.td {
+  font-size: 0.75rem;
+}
+
+.table, .th, .td {
+  border: 1px solid;
+
+}
+.th {
+  background-color: #f2a900;
+  color: white;
+  font-size: 0.75rem;
+}
+
+.th:hover {
+
+  cursor: pointer;
+  opacity: 95%;
+}
+
+.prev-page-button {
+  background-color: #f2a900;
+  margin: 2px;
+  border: 1px solid #000000;
+  font-size: 0.75rem;
+
+}
+
+.next-page-button {
+  background-color: #f2a900;
+  margin: 2px;
+  border: 1px solid #000000;
+  font-size: 0.75rem;
+
+}
+
+.rows-per-page {
+  font-size: 0.75rem;
+}
