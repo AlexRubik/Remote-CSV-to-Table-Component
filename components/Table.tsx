@@ -1,11 +1,7 @@
-import {FunctionComponent, useEffect, useMemo, useState} from "react";
+import {FunctionComponent, useEffect,useState} from "react";
 import classNames from "classnames/bind";
 import styles from './table.module.scss';
-export type TableProps = {
-    header: Array<string>,
-    rows: Array<Array<string>>
-
-}
+import {TableProps, page} from "../types/types";
 const Table: FunctionComponent<TableProps> = ({header,rows}) => {
 
 
@@ -23,8 +19,6 @@ const Table: FunctionComponent<TableProps> = ({header,rows}) => {
 
     const [currentRows, setCurrentRows] = useState<string[][]>();
     
-
-
 
     const getColIndex = (colName: string): number => {
 
@@ -112,8 +106,7 @@ const Table: FunctionComponent<TableProps> = ({header,rows}) => {
         setCurrentRows(newRows);
     }
 
-    type page = 'prev' | 'next';
-
+    // Param is next or previous page.
     const pageChange = (page:page) => {
 
         const pageCount = Math.ceil(rowsx.length / maxRowsPerPage);
